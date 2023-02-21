@@ -46,7 +46,7 @@ def predict_promotion(employee_id, department, region, education, gender, recrui
     prediction = model.predict(pd.DataFrame([[employee_id, department, region, education, gender, recruitment_channel, no_of_trainings, previous_year_rating, length_of_service, awards_won, avg_training_score,  age_group]], columns=['employee_id', 'department', 'region', 'education', 'gender', 'recruitment_channel', 'no_of_trainings', 'previous_year_rating', 'length_of_service', 'awards_won?', 'avg_training_score', 'age_group']))
     return prediction
 
-st.title("HR Analytics: Employee Promotion Prediction")
+st.title("HR: Employee Promotion Prediction")
 html_temp = """ <div style="background-color:#480F17;padding:10px">
     <h2 style="color:white;text-align:center;">HR Analytics: Employee Promotion Prediction </h2>
 
